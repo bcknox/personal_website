@@ -23,26 +23,22 @@
                     <ul
                         class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
                         <li class="nav-item">
-                            <a href="#" class="nav-link py-3 px-2 icons" title="" data-bs-toggle="tooltip"
-                                data-bs-placement="right" data-bs-original-title="Home">
+                            <a href="#" class="nav-link py-3 px-2 icons" title="Home">
                                 <i class="fa-solid fa-house"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link py-3 px-2 icons" title="" data-bs-toggle="tooltip"
-                                data-bs-placement="right" data-bs-original-title="About">
+                            <a id="nav_about" href="javascript:void(0)" class="nav-link py-3 px-2 icons" title="About">
                                 <i class="fa-solid fa-user"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link py-3 px-2 icons" title="" data-bs-toggle="tooltip"
-                                data-bs-placement="right" data-bs-original-title="Experience">
+                            <a href="#" class="nav-link py-3 px-2 icons" title="Experience">
                                 <i class="fa-solid fa-scroll"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link py-3 px-2 icons" title="" data-bs-toggle="tooltip"
-                                data-bs-placement="right" data-bs-original-title="Projects">
+                            <a href="#" class="nav-link py-3 px-2 icons" title="Projects">
                                 <i class="fa-solid fa-trophy"></i>
                             </a>
                         </li>
@@ -55,14 +51,13 @@
                         <h1 id="title">BRANDON KNOX</h1>
                         <span>CODING THE FUTURE <i class="fa-solid fa-code"></i> LINE BY LINE</span>
                     </header>
-                    <section>
-                        <h3>ABOUT ME</h3>
-                        <p>This is a paragraph about us.</p>
+                    <section id="about">
                     </section>
-
                     <section>
-                        <h3>EXPERIENCE</h3>
-                        <p>You can reach us at example@email.com</p>
+                        <div>
+                            <h3>EXPERIENCE</h3>
+                            <p>You can reach us at example@email.com</p>
+                        </div>
                     </section>
                 </main>
             </div>
@@ -77,6 +72,15 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5c22deb4a2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#nav_about").click(function () {
+                $("#about").load("about.html");
+            });
+        });
+    </script>
 </body>
 
 </html>
