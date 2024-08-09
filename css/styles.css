@@ -16,8 +16,9 @@ body {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 25px;
     color: #b3b3b3;
+    margin-bottom: 100px;
 }
 
 .agbalumo-regular {
@@ -32,10 +33,6 @@ footer {
     line-height: 2;
 }
 
-.exp_wrapper {
-    padding: 25px;
-}
-
 .exp_wrapper:hover {
     background-color: #1a1a1a;
     border-top: #404040 solid 2px;
@@ -46,12 +43,14 @@ footer {
 .exp {
     margin-top: 100px;
     color: #b3b3b3;
-    margin-bottom: 100px;
 }
 
 .exp_title {
     color: #cccccc;
     font-weight: bold;
+}
+.exp_wrapper {
+    padding: 25px 0px 25px 0px;
 }
 
 .highlight_text {
